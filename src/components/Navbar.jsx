@@ -35,7 +35,7 @@ const Navbar = () => {
       id: 1,
       child: (
         <>
-          <FaLinkedin size={50} />
+          <FaLinkedin size={30} />
         </>
       ),
       href: "https://www.linkedin.com/",
@@ -44,7 +44,7 @@ const Navbar = () => {
       id: 2,
       child: (
         <>
-          <FaGithub size={50} />
+          <FaGithub size={30} />
         </>
       ),
       href: "https://www.github.com/agrpaavan",
@@ -53,7 +53,7 @@ const Navbar = () => {
       id: 3,
       child: (
         <>
-          <HiOutlineMail size={50} />
+          <HiOutlineMail size={30} />
         </>
       ),
       href: "mailto:paavanagr@gmail.com",
@@ -62,7 +62,7 @@ const Navbar = () => {
       id: 4,
       child: (
         <>
-          <BsFillPersonLinesFill size={50} />
+          <BsFillPersonLinesFill size={30} />
         </>
       ),
       href: "https://www.linkedin.com/",
@@ -99,15 +99,18 @@ const Navbar = () => {
             {links.map(({ id, link }) => (
               <li
                 key={id}
-                className="px-4 py-8 text-4xl cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200"
+                className="px-4 py-6 text-3xl  capitalize font-medium "
               >
                 {link}
               </li>
             ))}
           </ul>
-          <ul className="flex flex-row justify-center items-center absolute w-full text-white bottom-0">
+          <ul className="flex flex-row justify-center items-center static">
             {socialLinks.map(({ id, child, href, style }) => (
-              <li key={id} className="py-8 px-4">
+              <li
+                key={id}
+                className="pt-8 px-4 cursor-pointer hover:scale-105 duration-200"
+              >
                 <a href={href} target="_blank" rel="noreferrer">
                   {child}
                 </a>
