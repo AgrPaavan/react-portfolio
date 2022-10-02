@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -35,37 +34,37 @@ const Navbar = () => {
       id: 1,
       child: (
         <>
-          <FaLinkedin size={30} />
+          <FaGithub size={30} />
         </>
       ),
-      href: "https://www.linkedin.com/",
+      href: "https://github.com/AgrPaavan",
     },
     {
       id: 2,
       child: (
         <>
-          <FaGithub size={30} />
+          <FaLinkedin size={30} />
         </>
       ),
-      href: "https://www.github.com/agrpaavan",
+      href: "https://www.linkedin.com/in/paavan-agrawal-28186a201/",
     },
     {
       id: 3,
+      child: (
+        <>
+          <FaInstagram size={30} />
+        </>
+      ),
+      href: "https://www.instagram.com/paavanagr/",
+    },
+    {
+      id: 4,
       child: (
         <>
           <HiOutlineMail size={30} />
         </>
       ),
       href: "mailto:paavanagr@gmail.com",
-    },
-    {
-      id: 4,
-      child: (
-        <>
-          <BsFillPersonLinesFill size={30} />
-        </>
-      ),
-      href: "https://www.linkedin.com/",
     },
   ];
 
