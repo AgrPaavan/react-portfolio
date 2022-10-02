@@ -45,7 +45,7 @@ const Projects = () => {
           {projects.map(({ id, name, src, href, shadow }) => (
             <div
               key={id}
-              className={`shadow-md rounded-lg hover:scale-105 duration-200 ${
+              className={`shadow-md rounded-lg hover:scale-105 duration-500 ${
                 shadow ? shadow : "shadow-gray-600"
               }`}
             >
