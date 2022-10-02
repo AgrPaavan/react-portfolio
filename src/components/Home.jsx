@@ -9,7 +9,7 @@ const Home = () => {
     >
       <div className="max-w-screen-lg mx-auto flex flex-row items-center justify-center h-full px-4">
         <div className="flex flex-col justify-center h-full">
-          <h3 className="text-1xl sm:text-2xl font-light text-[#219be5]">
+          <h3 className="text-1xl sm:text-2xl font-light text-accent">
             Hi, I'm
           </h3>
           <h2 className="text-4xl sm:text-7xl font-bold text-white">

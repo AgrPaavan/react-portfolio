@@ -99,7 +99,7 @@ const Navbar = () => {
       }`}
     >
       <div>
-        <h1 className="text-5xl font-signature ml-2 text-[#219be5]">Paavan</h1>
+        <h1 className="text-5xl font-signature ml-2 text-accent">Paavan</h1>
       </div>
 
       <ul className="hidden md:flex">
