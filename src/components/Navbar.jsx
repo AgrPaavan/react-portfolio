@@ -98,7 +98,7 @@ const Navbar = () => {
             {links.map(({ id, link }) => (
               <li
                 key={id}
-                className="px-4 py-6 text-3xl  capitalize font-medium "
+                className="px-4 py-6 text-3xl capitalize font-medium"
               >
                 {link}
               </li>
