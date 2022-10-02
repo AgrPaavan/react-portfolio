@@ -16,6 +16,7 @@ const Projects = () => {
       name: "Phishing Detecting Extension",
       src: safesurf,
       href: "https://github.com/AgrPaavan/SafeSurf",
+      shadow: "shadow-[#0093d3]",
     },
     {
       id: 3,
@@ -28,7 +29,7 @@ const Projects = () => {
   return (
     <div
       name="projects"
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
+      className="bg-gradient-to-b from-black to-gray-800 w-full text-white sm:hful md:h-screen"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
@@ -41,10 +42,12 @@ const Projects = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {projects.map(({ id, name, src, href }) => (
+          {projects.map(({ id, name, src, href, shadow }) => (
             <div
               key={id}
-              className="shadow-md shadow-gray-600 rounded-lg hover:scale-105 duration-200"
+              className={`shadow-md rounded-lg hover:scale-105 duration-200 ${
+                shadow ? shadow : "shadow-gray-600"
+              }`}
             >
               <img src={src} alt="" className="rounded-md m-auto" />
               <div className="flex flex-col grow flex-initial justify-center items-center">
