@@ -9,3 +9,12 @@
     font-family: "Raleway", sans-serif;
   }
 }
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
