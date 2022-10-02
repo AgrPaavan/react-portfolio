@@ -25,11 +25,13 @@ const Navbar = () => {
     {
       id: 4,
       link: "skills",
+      moff: -80,
     },
     {
       id: 5,
       link: "contact",
       doff: -50,
+      moff: -80,
     },
   ];
 
