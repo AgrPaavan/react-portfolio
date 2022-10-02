@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+      className="w-full h-full xs:h-screen bg-gradient-to-b from-gray-800 to-black text-white"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
@@ -13,24 +13,55 @@ const About = () => {
           </h2>
         </div>
 
-        <p className="text-lg mt-20">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
-          id. Incidunt dolore eaque, aperiam, corrupti doloremque ratione
-          veniam, in facilis rerum dolorem nam maiores officiis adipisci!
-          Eligendi vitae libero nemo iure corrupti, optio ipsam laudantium ut
-          qui laborum animi nesciunt est aperiam necessitatibus quis aliquam
-          sequi accusantium tempora. Voluptatem, vitae.
+        <p className="text-lg mt-10">
+          I am currently pursuing B.Tech in CSE with specialization in Software
+          Engineering from{" "}
+          <a
+            href="https://www.srmist.edu.in/"
+            target="_blank"
+            rel="noreferrer"
+            className="border-b-2 border-gray-500"
+          >
+            SRMIST
+          </a>
+          . I completed the schooling from{" "}
+          <a
+            href="http://www.doonchool.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="border-b-2 border-gray-500"
+          >
+            The Doon School
+          </a>
+          .
         </p>
 
         <br />
 
         <p className="text-lg">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-          pariatur nisi eos nam minima, doloremque velit architecto, ea
-          corporis, voluptatem totam sunt ipsa fugit quo consequatur ab? Sequi
-          ipsam labore possimus tenetur quibusdam porro est ratione corporis, id
-          eligendi non neque consectetur atque debitis. Modi illo distinctio
-          ullam rerum enim!
+          I started coding when I was in the 9th grade as a requirment for my
+          GCSE Computer Science course but have since felt in love with it. I
+          wish that I was introduced to the world of programming earlier in my
+          life but am happy that I came around to it sooner than later.
+        </p>
+
+        <br />
+
+        <p className="text-lg">
+          Currently I am trying to upskill myself in the field of web
+          development. Recently I learnt how to use the react framework. I also
+          learnt how to use bootstrap and tailwind css frameworks. I also plan
+          to learn how to integrate databases and code the backend in hopes of
+          being a full-stack engineer.
+        </p>
+
+        <br />
+
+        <p className="text-lg">
+          I know how to code in basic Java thanks to my school coursework and
+          have learnt basic C and C++ in my college course. I am pursuing a
+          specialization in software engineering so I hope I get to learn
+          advanced C++ to help me write complete softwares.
         </p>
       </div>
     </div>

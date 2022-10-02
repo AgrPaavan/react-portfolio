@@ -17,10 +17,9 @@ const Home = () => {
             Paavan Agrawal
           </h2>
           <p className="text-gray-500 py-4 max-w-sm sm:max-w-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-            ipsam eveniet, quibusdam laudantium consequatur saepe, ullam natus
-            consectetur quos aliquam itaque. Cupiditate ad tenetur amet. Fugiat
-            nisi sequi blanditiis molestiae!
+            I am a 2nd year CSE student at SRMIST, India. I am most interested
+            in the field of web development and am currently trying to grasp
+            knowledge of new technologies in the field.
           </p>
 
           <div>

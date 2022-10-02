@@ -9,6 +9,9 @@ module.exports = {
       colors: {
         accent: "#219be5",
       },
+      screens: {
+        xs: "450px",
+      },
     },
   },
   plugins: [],

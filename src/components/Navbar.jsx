@@ -15,11 +15,12 @@ const Navbar = () => {
     {
       id: 2,
       link: "about",
+      moff: -80,
     },
     {
       id: 3,
       link: "projects",
-      moff: -50,
+      moff: -80,
     },
     {
       id: 4,
