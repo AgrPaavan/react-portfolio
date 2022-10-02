@@ -38,11 +38,11 @@ const Navbar = () => {
     },
     {
       id: 3,
-      link: "Projects",
+      link: "projects",
     },
     {
       id: 4,
-      link: "experience",
+      link: "skills",
     },
     {
       id: 5,
@@ -93,7 +93,9 @@ const Navbar = () => {
     <div
       id="navbar"
       className={`flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed ${
-        visible ? "translate-y-0 duration-500" : "-translate-y-20 duration-500"
+        visible
+          ? "translate-y-0 duration-500 md:transform-none"
+          : "-translate-y-20 duration-500 md:transform-none"
       }`}
     >
       <div>
