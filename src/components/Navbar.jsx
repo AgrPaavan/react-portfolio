@@ -1,30 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 
 const Navbar = () => {
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [visible, setVisible] = useState(true);
-
-  const handleScroll = () => {
-    const currentScrollPos = window.scrollY;
-
-    if (currentScrollPos > prevScrollPos) {
-      setVisible(false);
-    } else {
-      setVisible(true);
-    }
-
-    setPrevScrollPos(currentScrollPos);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  });
-
   const [nav, setNav] = useState(false);
 
   const links = [
@@ -39,6 +19,7 @@ const Navbar = () => {
     {
       id: 3,
       link: "projects",
+      moff: -50,
     },
     {
       id: 4,
@@ -47,6 +28,7 @@ const Navbar = () => {
     {
       id: 5,
       link: "contact",
+      doff: -50,
     },
   ];
 
@@ -92,23 +74,25 @@ const Navbar = () => {
   return (
     <div
       id="navbar"
-      className={`flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed ${
-        visible
-          ? "translate-y-0 duration-500 md:transform-none"
-          : "-translate-y-20 duration-500 md:transform-none"
-      }`}
+      className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed"
     >
       <div>
-        <h1 className="text-5xl font-signature ml-2 text-accent">Paavan</h1>
+        <h1 className="text-5xl font-signature ml-2 text-accent hover:cursor-pointer">
+          <Link to="home" smooth duration={500}>
+            Paavan
+          </Link>
+        </h1>
       </div>
 
       <ul className="hidden md:flex">
-        {links.map(({ id, link }) => (
+        {links.map(({ id, link, doff }) => (
           <li
             key={id}
             className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200"
           >
-            {link}
+            <Link to={link} smooth duration={500} offset={doff}>
+              {link}
+            </Link>
           </li>
         ))}
       </ul>
@@ -123,12 +107,23 @@ const Navbar = () => {
       {nav && (
         <div className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
           <ul className="flex flex-col justify-center items-center">
-            {links.map(({ id, link }) => (
+            {links.map(({ id, link, moff }) => (
               <li
                 key={id}
                 className="px-4 py-6 text-3xl capitalize font-medium"
               >
-                {link}
+                <Link
+                  onClick={() => {
+                    setNav(!nav);
+                    window.scrollBy(0, 1);
+                  }}
+                  to={link}
+                  smooth
+                  duration={500}
+                  offset={moff}
+                >
+                  {link}
+                </Link>
               </li>
             ))}
           </ul>
