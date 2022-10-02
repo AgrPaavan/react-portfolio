@@ -24,7 +24,7 @@ const Home = () => {
 
           <div>
             <button className="group text-white w-fit px-6 py-3 my-2 flex flex-row items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
-              Portfolio
+              Projects
               <span className="group-hover:rotate-90 duration-300">
                 <HiOutlineArrowRight size={18} className="ml-1" />
               </span>
