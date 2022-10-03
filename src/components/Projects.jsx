@@ -49,7 +49,7 @@ const Projects = () => {
                 shadow ? shadow : "shadow-gray-600"
               }`}
             >
-              <img src={src} alt="" className="rounded-md m-auto" />
+              <img src={src} alt="" className="rounded-md m-auto flex-1" />
               <div className="flex flex-col grow flex-initial justify-center items-center">
                 <button className="px-6 py-3">{name}</button>
                 <button className="px-6 py-3 text-gray-500 mb-auto">

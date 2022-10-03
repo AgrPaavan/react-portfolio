@@ -22,22 +22,30 @@ const Home = () => {
             knowledge of new technologies in the field.
           </p>
 
-          <div>
-            <button className="group text-white w-fit px-6 py-3 my-2 flex flex-row items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
-              <div className="hidden md:contents">
-                <Link to="projects" smooth duration={500}>
-                  Projects
-                </Link>
-              </div>
-              <div className="contents md:hidden">
-                <Link to="projects" smooth duration={500} offset={-50}>
-                  Projects
-                </Link>
-              </div>
-              <span className="group-hover:rotate-90 duration-300">
-                <HiOutlineArrowRight size={18} className="ml-1" />
-              </span>
-            </button>
+          <div className="hidden md:inline">
+            <Link to="projects" smooth duration={500}>
+              <button className="group text-white w-fit px-6 py-3 my-2 flex flex-row items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
+                Projects
+                <div className="contents md:hidden">
+                  <Link to="projects" smooth duration={500} offset={-50}>
+                    Projects
+                  </Link>
+                </div>
+                <span className="group-hover:rotate-90 duration-300">
+                  <HiOutlineArrowRight size={18} className="ml-1" />
+                </span>
+              </button>
+            </Link>
+          </div>
+          <div className="inline md:hidden">
+            <Link to="projects" smooth duration={500} offset={-80}>
+              <button className="group text-white w-fit px-6 py-3 my-2 flex flex-row items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
+                Projects
+                <span className="group-hover:rotate-90 duration-300">
+                  <HiOutlineArrowRight size={18} className="ml-1" />
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
       </div>
