@@ -1,10 +1,10 @@
 import React from "react";
-import html from "../assets/skills/html.png";
-import css from "../assets/skills/css.png";
-import javascript from "../assets/skills/javascript.png";
-import react from "../assets/skills/react.png";
-import tailwind from "../assets/skills/tailwind.png";
-import node from "../assets/skills/node.png";
+import css from "../assets/skills/css.svg";
+import html from "../assets/skills/html.svg";
+import javascript from "../assets/skills/javascript.svg";
+import node from "../assets/skills/node.svg";
+import react from "../assets/skills/react.svg";
+import tailwind from "../assets/skills/tailwind.svg";
 
 const Skills = () => {
   const skills = [
