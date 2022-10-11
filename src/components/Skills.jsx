@@ -2,6 +2,7 @@ import React from "react";
 import css from "../assets/skills/css.svg";
 import html from "../assets/skills/html.svg";
 import javascript from "../assets/skills/javascript.svg";
+import nextjs from "../assets/skills/nextjs.svg";
 import node from "../assets/skills/node.svg";
 import react from "../assets/skills/react.svg";
 import tailwind from "../assets/skills/tailwind.svg";
@@ -43,6 +44,12 @@ const Skills = () => {
       src: node,
       title: "Node.js",
       style: "shadow-lime-500",
+    },
+    {
+      id: 7,
+      src: nextjs,
+      title: "Next.JS",
+      style: "shadow-black text-black invert",
     },
   ];
 
