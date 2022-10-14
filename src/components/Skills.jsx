@@ -76,7 +76,7 @@ const Skills = () => {
                 style
               }
             >
-              <img src={src} alt="" className="w-20 mx-auto" />
+              <img src={src} alt="" className="w-20 h-20 mx-auto" />
               <p className="mt-4">{title}</p>
             </div>
           ))}
