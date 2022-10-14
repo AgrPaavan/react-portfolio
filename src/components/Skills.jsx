@@ -5,7 +5,9 @@ import javascript from "../assets/skills/javascript.svg";
 import nextjs from "../assets/skills/nextjs.svg";
 import node from "../assets/skills/node.svg";
 import react from "../assets/skills/react.svg";
+import sass from "../assets/skills/sass.svg";
 import tailwind from "../assets/skills/tailwind.svg";
+import bootstrap from "../assets/skills/bootstrap.svg";
 
 const Skills = () => {
   const skills = [
@@ -29,27 +31,39 @@ const Skills = () => {
     },
     {
       id: 4,
-      src: react,
-      title: "React",
-      style: "shadow-blue-600",
-    },
-    {
-      id: 1,
-      src: tailwind,
-      title: "TailwindCSS",
-      style: "shadow-sky-400",
-    },
-    {
-      id: 6,
       src: node,
       title: "Node.js",
       style: "shadow-lime-500",
     },
     {
-      id: 7,
+      id: 5,
+      src: sass,
+      title: "Sass",
+      style: "shadow-pink-400",
+    },
+    {
+      id: 6,
       src: nextjs,
       title: "Next.JS",
       style: "shadow-black text-black invert",
+    },
+    {
+      id: 7,
+      src: tailwind,
+      title: "TailwindCSS",
+      style: "shadow-sky-400",
+    },
+    {
+      id: 8,
+      src: react,
+      title: "React",
+      style: "shadow-blue-600",
+    },
+    {
+      id: 9,
+      src: bootstrap,
+      title: "Bootstrap",
+      style: "shadow-purple-400",
     },
   ];
 
