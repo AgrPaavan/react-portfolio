@@ -1,7 +1,7 @@
 import React from "react";
+import basicPortfolio from "../assets/projects/basicPortfolio.png";
 import discordjs from "../assets/projects/discordjs.png";
 import safesurf from "../assets/projects/safesurf.png";
-import basicPortfolio from "../assets/projects/basicPortfolio.png";
 
 const Projects = () => {
   const projects = [
@@ -29,7 +29,7 @@ const Projects = () => {
   return (
     <div
       name="projects"
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-white h-full sm:h-screen"
+      className="bg-gradient-to-b from-black to-gray-800 w-full text-white h-full md:h-screen"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">

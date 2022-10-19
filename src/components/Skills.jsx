@@ -1,4 +1,5 @@
 import React from "react";
+import bootstrap from "../assets/skills/bootstrap.svg";
 import css from "../assets/skills/css.svg";
 import html from "../assets/skills/html.svg";
 import javascript from "../assets/skills/javascript.svg";
@@ -7,7 +8,6 @@ import node from "../assets/skills/node.svg";
 import react from "../assets/skills/react.svg";
 import sass from "../assets/skills/sass.svg";
 import tailwind from "../assets/skills/tailwind.svg";
-import bootstrap from "../assets/skills/bootstrap.svg";
 
 const Skills = () => {
   const skills = [
@@ -45,7 +45,7 @@ const Skills = () => {
       id: 6,
       src: nextjs,
       title: "Next.JS",
-      style: "shadow-black text-black invert",
+      style: "shadow-white",
     },
     {
       id: 7,
@@ -70,7 +70,7 @@ const Skills = () => {
   return (
     <div
       name="skills"
-      className="bg-gradient-to-b from-gray-800 to to-black w-full h-screen"
+      className="bg-gradient-to-b from-gray-800 to to-black w-full h-full md:h-screen"
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <div>
