@@ -26,7 +26,7 @@ const About = () => {
           </a>
           . I completed the schooling from{" "}
           <a
-            href="http://www.doonchool.com/"
+            href="http://www.doonschool.com/"
             target="_blank"
             rel="noreferrer"
             className="border-b-2 border-gray-500"
