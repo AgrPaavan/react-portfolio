@@ -1,4 +1,5 @@
 import React from "react";
+import basicNotes from "../assets/projects/basicNotes.png";
 import basicPortfolio from "../assets/projects/basicPortfolio.png";
 import discordjs from "../assets/projects/discordjs.png";
 import safesurf from "../assets/projects/safesurf.png";
@@ -23,6 +24,12 @@ const Projects = () => {
       name: "Basic Portfolio Site",
       src: basicPortfolio,
       href: "https://github.com/AgrPaavan/basic-portfolio",
+    },
+    {
+      id: 4,
+      name: "Basic Notes Application",
+      src: basicNotes,
+      href: "https://github.com/AgrPaavan/basic-notes",
     },
   ];
 
