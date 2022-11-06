@@ -29,7 +29,7 @@ const Projects = () => {
       id: 4,
       name: "Basic Notes Application",
       src: basicNotes,
-      href: "https://github.com/AgrPaavan/basic-notes",
+      href: "https://github.com/AgrPaavan/notes-app",
     },
   ];
 
