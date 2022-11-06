@@ -24,12 +24,14 @@ const Projects = () => {
       name: "Basic Portfolio Site",
       src: basicPortfolio,
       href: "https://github.com/AgrPaavan/basic-portfolio",
+      deploy: "https://agrpaavan.github.io/basic-portfolio",
     },
     {
       id: 4,
       name: "Basic Notes Application",
       src: basicNotes,
       href: "https://github.com/AgrPaavan/notes-app",
+      deploy: "https://agrpaavan-notes-app.netlify.app/",
     },
   ];
 
@@ -49,7 +51,7 @@ const Projects = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {projects.map(({ id, name, src, href, shadow }) => (
+          {projects.map(({ id, name, src, href, shadow, deploy }) => (
             <div
               key={id}
               className={`shadow-md rounded-lg hover:scale-105 duration-500 ${
@@ -59,11 +61,27 @@ const Projects = () => {
               <img src={src} alt="" className="rounded-md m-auto flex-1" />
               <div className="flex flex-col grow flex-initial justify-center items-center">
                 <button className="px-6 py-3">{name}</button>
-                <button className="px-6 py-3 text-gray-500 mb-auto">
-                  <a href={href} target="_blank" rel="noreferrer">
-                    Github Repository
-                  </a>
-                </button>
+                {deploy && (
+                  <div className="flex flex-row justify-between items-center">
+                    <button className="px-6 py-3 text-gray-500 mb-auto justify-end hover:text-gray-400">
+                      <a href={href} target="_blank" rel="noreferrer">
+                        Github
+                      </a>
+                    </button>
+                    <button className="px-6 py-3 text-gray-500 mb-auto justify-end hover:text-gray-400">
+                      <a href={deploy} target="_blank" rel="noreferrer">
+                        Website
+                      </a>
+                    </button>
+                  </div>
+                )}
+                {!deploy && (
+                  <button className="px-6 py-3 text-gray-500 mb-auto justify-end hover:text-gray-400">
+                    <a href={href} target="_blank" rel="noreferrer">
+                      Github Repository
+                    </a>
+                  </button>
+                )}
               </div>
             </div>
           ))}
