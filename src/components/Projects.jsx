@@ -22,7 +22,7 @@ const Projects = () => {
       id: 3,
       name: "Basic Portfolio Site",
       src: basicPortfolio,
-      href: "https://github.com/AgrPaavan/agrpaavan.github.io",
+      href: "https://github.com/AgrPaavan/basic-portfolio",
     },
   ];
 
