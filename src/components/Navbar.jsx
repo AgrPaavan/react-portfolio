@@ -1,8 +1,13 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll";
-import { FaBars, FaTimes } from "react-icons/fa";
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import {
+  FaBars,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaTimes,
+} from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -20,6 +25,7 @@ const Navbar = () => {
     {
       id: 3,
       link: "projects",
+      doff: -50,
       moff: -80,
     },
     {
