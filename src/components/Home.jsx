@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-scroll";
 import { HiOutlineArrowRight } from "react-icons/hi";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
@@ -23,11 +23,11 @@ const Home = () => {
           </p>
 
           <div className="hidden md:inline">
-            <Link to="projects" smooth duration={500}>
+            <Link to="projects" smooth duration={500} offset={-80}>
               <button className="group text-white w-fit px-6 py-3 my-2 flex flex-row items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
                 Projects
                 <div className="contents md:hidden">
-                  <Link to="projects" smooth duration={500} offset={-50}>
+                  <Link to="projects" smooth duration={500} offset={-80}>
                     Projects
                   </Link>
                 </div>
