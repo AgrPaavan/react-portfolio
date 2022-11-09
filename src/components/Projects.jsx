@@ -2,6 +2,7 @@ import React from "react";
 import basicNotes from "../assets/projects/basicNotes.png";
 import basicPortfolio from "../assets/projects/basicPortfolio.png";
 import discordjs from "../assets/projects/discordjs.png";
+import linktree from "../assets/projects/linktreeClone.png";
 import safesurf from "../assets/projects/safesurf.png";
 
 const Projects = () => {
@@ -32,6 +33,14 @@ const Projects = () => {
       src: basicNotes,
       href: "https://github.com/AgrPaavan/notes-app",
       deploy: "https://agrpaavan-notes-app.netlify.app/",
+    },
+    {
+      id: 5,
+      name: "Linktree Clone",
+      src: linktree,
+      href: "https://github.com/AgrPaavan/linktree-clone",
+      deploy: "https://agrpaavan-linktree-clone.netlify.app/",
+      shadow: "shadow-[#43e660]",
     },
   ];
 
