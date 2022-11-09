@@ -6,7 +6,7 @@ import {
   FaLinkedin,
   FaTimes,
 } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
+import { HiOutlineLink, HiOutlineMail } from "react-icons/hi";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
@@ -44,7 +44,16 @@ const Navbar = () => {
 
   const socialLinks = [
     {
-      id: 1,
+      id: 3,
+      child: (
+        <>
+          <HiOutlineLink size={30} />
+        </>
+      ),
+      href: "https://linktr.ee/agrpaavan",
+    },
+    {
+      id: 3,
       child: (
         <>
           <FaGithub size={30} />
@@ -53,7 +62,7 @@ const Navbar = () => {
       href: "https://github.com/AgrPaavan",
     },
     {
-      id: 2,
+      id: 3,
       child: (
         <>
           <FaLinkedin size={30} />
@@ -62,7 +71,7 @@ const Navbar = () => {
       href: "https://www.linkedin.com/in/paavan-agrawal-28186a201/",
     },
     {
-      id: 3,
+      id: 4,
       child: (
         <>
           <FaInstagram size={30} />
@@ -71,7 +80,7 @@ const Navbar = () => {
       href: "https://www.instagram.com/paavanagr/",
     },
     {
-      id: 4,
+      id: 5,
       child: (
         <>
           <HiOutlineMail size={30} />
@@ -141,7 +150,7 @@ const Navbar = () => {
             {socialLinks.map(({ id, child, href, style }) => (
               <li
                 key={id}
-                className="pt-8 px-4 cursor-pointer hover:scale-105 duration-200"
+                className="py-8 px-4 cursor-pointer hover:scale-105 duration-200"
               >
                 <a href={href} target="_blank" rel="noreferrer">
                   {child}

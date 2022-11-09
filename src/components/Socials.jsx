@@ -1,6 +1,6 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail, HiOutlineLink } from "react-icons/hi";
 
 const Socials = () => {
   const links = [
@@ -8,14 +8,23 @@ const Socials = () => {
       id: 1,
       child: (
         <>
-          Github <FaGithub size={30} />
+          Linktree <HiOutlineLink size={30} />
         </>
       ),
-      href: "https://github.com/AgrPaavan",
+      href: "https://linktr.ee/agrpaavan",
       style: "rounded-tr-md",
     },
     {
       id: 2,
+      child: (
+        <>
+          Github <FaGithub size={30} />
+        </>
+      ),
+      href: "https://github.com/AgrPaavan",
+    },
+    {
+      id: 3,
       child: (
         <>
           LinkedIn <FaLinkedin size={30} />
@@ -24,7 +33,7 @@ const Socials = () => {
       href: "https://www.linkedin.com/in/paavan-agrawal-28186a201/",
     },
     {
-      id: 3,
+      id: 4,
       child: (
         <>
           Instagram <FaInstagram size={30} />
@@ -33,7 +42,7 @@ const Socials = () => {
       href: "https://www.instagram.com/paavanagr/",
     },
     {
-      id: 4,
+      id: 5,
       child: (
         <>
           Mail <HiOutlineMail size={30} />
