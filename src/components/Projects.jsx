@@ -69,7 +69,7 @@ const Projects = () => {
             >
               <img src={src} alt="" className="rounded-md m-auto flex-1" />
               <div className="flex flex-col grow flex-initial justify-center items-center">
-                <button className="px-6 py-3">{name}</button>
+                <button className="px-6 py-3 cursor-default">{name}</button>
                 {deploy && (
                   <div className="flex flex-row justify-between items-center">
                     <button className="px-6 py-3 text-gray-500 mb-auto justify-end hover:text-gray-400">

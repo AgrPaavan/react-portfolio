@@ -1,7 +1,10 @@
 import React from "react";
 import bootstrap from "../assets/skills/bootstrap.svg";
+import c from "../assets/skills/c.svg";
+import cpp from "../assets/skills/cpp.svg";
 import css from "../assets/skills/css.svg";
 import html from "../assets/skills/html.svg";
+import java from "../assets/skills/java.svg";
 import javascript from "../assets/skills/javascript.svg";
 import nextjs from "../assets/skills/nextjs.svg";
 import node from "../assets/skills/node.svg";
@@ -64,6 +67,24 @@ const Skills = () => {
       src: bootstrap,
       title: "Bootstrap",
       style: "shadow-purple-400",
+    },
+    {
+      id: 10,
+      src: c,
+      title: "Basic C",
+      style: "shadow-blue-600",
+    },
+    {
+      id: 11,
+      src: cpp,
+      title: "Basic C++",
+      style: "shadow-blue-800",
+    },
+    {
+      id: 12,
+      src: java,
+      title: "Basic Java",
+      style: "shadow-orange-400",
     },
   ];
 
